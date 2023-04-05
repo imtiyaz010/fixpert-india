@@ -9,7 +9,7 @@ function Header() {
   ];
 
   return (
-    <nav className="text-gray-600 body-font bg-gray-100 sticky top-0 z-50">
+    <nav className="text-gray-600 body-font bg-white sticky top-0 z-50 shadow-md">
       <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center justify-between">
         <div className="flex flex-wrap items-center justify-between ">
           <a
@@ -17,11 +17,10 @@ function Header() {
             href="/"
           >
             <img
-              src="https://www.clipartmax.com/png/middle/153-1538762_ac-repair-titusville-fl-air-conditioner-vector-png.png"
-              className="w-12 h-12"
+              src="images/fixpertIndiaLogo.jpg"
+              className="w-44 h-16"
               alt="icon"
             />
-            <span className="ml-3 text-xl text-center">FIXPERT-INDIA</span>
           </a>
           <FaBars className="md:hidden h-8 w-8 cursor-pointer" />
         </div>
