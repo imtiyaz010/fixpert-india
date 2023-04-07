@@ -25,7 +25,7 @@ function Banner() {
           type="button"
           className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none font-medium rounded-full text-xl px-5 py-2.5 text-center my-8"
         >
-          Call Now 98204 75921
+          Call Now 78603 03304
         </button>
       </div>
     </div>

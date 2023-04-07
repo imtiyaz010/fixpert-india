@@ -13,7 +13,7 @@ function About() {
       <div className="md:col-span-1 p-4">
         <h2 className="text-xl font-bold">About Us</h2>
         <p className="xl:w-[75%]">
-          Nakoda Urban Services was established in year 2020 with a promise to
+          Fixpert India Services was established in year 2023 with a promise to
           provide customers with a clean and safe environment in personal and
           commercial spaces. In our organization, we are equipped with advanced
           technology and all the right tools, equipment that helps us provide

@@ -48,10 +48,10 @@ const InfoDiv = () => {
         <h2 className="font-bold">Contact Info</h2>
         <hr className="w-1/3" />
         <ul className="flex flex-col gap-3 text-sm">
-          <li className="cursor-pointer">Gurgaon, Haryana</li>
-          <li className="cursor-pointer">91-8987378792</li>
+          <li className="cursor-pointer">Kanpur, UP</li>
+          <li className="cursor-pointer">91-7860303304</li>
           <li className="cursor-pointer">
-            Support@nakodadcs.com
+            fixpertindia.service@gmail.com
             <br />
             We reply within 1 work day
           </li>

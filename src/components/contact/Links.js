@@ -20,7 +20,7 @@ function Links() {
       id: 3,
       tag: "FaPhone",
       title: "Call Here",
-      snap: "91-9283734839",
+      snap: "91-7860303304",
     },
   ];
 
