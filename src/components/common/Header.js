@@ -1,39 +1,84 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
+const getWidth = () =>
+  window.innerWidth ||
+  document.documentElement.clientWidth ||
+  document.body.clientWidth;
 
 function Header() {
   const links = [
     { name: "Full Home Cleaning", link: "/f-h-c", id: 1 },
     { name: "Ac Service Repair", link: "/a-s-r", id: 2 },
     { name: "Cleaning Services", link: "c-s", id: 3 },
+    { name: "Cleaning Services", link: "c-s", id: 4 },
   ];
+
+  const [isToggle, setIsToggle] = useState(false);
+  const [width, setWidth] = useState(getWidth());
+
+  const toggleHandler = () => {
+    setIsToggle(!isToggle);
+  };
+
+  useEffect(() => {
+    const resizeListener = () => {
+      setWidth(getWidth());
+
+      if (width >= 767) {
+        setIsToggle(false);
+      }
+    };
+    // set resize listener
+    window.addEventListener("resize", resizeListener);
+
+    // clean up function
+    return () => {
+      // remove resize listener
+      window.removeEventListener("resize", resizeListener);
+    };
+  }, [width]);
 
   return (
     <nav className="text-gray-600 body-font bg-white sticky top-0 z-50 shadow-md">
-      <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center justify-between">
-        <div className="flex flex-wrap items-center justify-between ">
-          <a
-            className="flex title-font font-medium items-center justify-center text-gray-900 mb-4 md:mb-0 h-full"
-            href="/"
+      <div className="flex flex-wrap p-2 flex-col md:flex-row items-center justify-between w-full">
+        <div className="flex flex-wrap items-center justify-between w-full md:w-auto">
+          <Link
+            className="flex title-font font-medium items-center justify-center text-gray-900 mb-0 h-full"
+            to="/"
           >
             <img
               src="images/fixpertIndiaLogo.jpg"
               className="w-44 h-16"
               alt="icon"
             />
-          </a>
-          <FaBars className="md:hidden h-8 w-8 cursor-pointer" />
+          </Link>
+          <FaBars
+            className="md:hidden h-8 w-8 cursor-pointer"
+            onClick={toggleHandler}
+          />
         </div>
-        <div className="md:block hidden">
-          <ul className="flex flex-wrap  text-base gap-8 font-semibold">
-            <li className="mr-5 hover:text-gray-900 cursor-pointer">HOME </li>
+        <div
+          className={` ${
+            !isToggle && "hidden"
+          } w-full md:block md:w-auto md:order-1`}
+        >
+          <ul
+            className={`flex flex-wrap flex-col md:flex-row text-base gap-6 font-semibold ml-6`}
+          >
             <li className="mr-5 hover:text-gray-900 cursor-pointer">
-              ABOUT US{" "}
+              <Link to="/">HOME</Link>
+            </li>
+            <li className="mr-5 hover:text-gray-900 cursor-pointer">
+              <Link to="/about-us">ABOUT US</Link>
             </li>
             <li className="mr-5 hover:text-gray-900 cursor-pointer">
               <Dropdown links={links} />
             </li>
-            <li className="mr-5 hover:text-gray-900 cursor-pointer">CONTACT</li>
+            <li className="mr-5 hover:text-gray-900 cursor-pointer">
+              <Link to="/contact">CONTACT</Link>
+            </li>
           </ul>
         </div>
       </div>
@@ -41,7 +86,7 @@ function Header() {
   );
 }
 const Dropdown = ({ links }) => {
-  const [open, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const onLeaveHandler = () => {
     setIsOpen(false);
   };
@@ -52,8 +97,8 @@ const Dropdown = ({ links }) => {
     <div className="relative" onMouseLeave={onLeaveHandler}>
       <button onMouseOver={onEnterHandler}>SERVICES</button>
       <div
-        className={`absolute top-6 left-[-18px] flex flex-col px-3 py-2 pr-4 bg-white shadow-2xl ${
-          open
+        className={`absolute top-6 left-[-28px] flex flex-col py-2 pr-4 bg-white shadow-lg shadow-black w-60 gap-3 ${
+          isOpen
             ? "opacity-100 transition-opacity ease-in-out delay-150 pointer-events-auto"
             : "transition-opacity ease-in-out opacity-0 delay-150 pointer-events-none"
         }`}
@@ -61,7 +106,7 @@ const Dropdown = ({ links }) => {
         {links.map((link) => {
           return (
             <a
-              className="m-1 mx-2 pb-2 text-sm font-semibold whitespace-nowrap border-b-[1px] hover:text-blue-500 last:border-none last:pb-0 "
+              className="m-1 mx-2 pb-2 font-semibold whitespace-nowrap border-b-[1px] hover:text-blue-500 last:border-none last:pb-0"
               href={link.link}
               key={link.id}
             >

@@ -1,10 +1,11 @@
 import React from "react";
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className=" bg-slate-800">
-      <div>
+    <div className="bg-slate-800">
+      <div className="flex flex-col justify-center 3xl:px-[25%]">
         <InfoDiv />
       </div>
       <hr />
@@ -33,8 +34,12 @@ const InfoDiv = () => {
         <h2 className="font-bold">Quick Links</h2>
         <hr className="w-1/3" />
         <ul className="flex flex-col gap-3 text-sm">
-          <li className="cursor-pointer">About Us</li>
-          <li className="cursor-pointer">Contact Us</li>
+          <li className="cursor-pointer">
+            <Link to="/about-us">About Us</Link>
+          </li>
+          <li className="cursor-pointer">
+            <Link to="/contact">Contact</Link>
+          </li>
           <li className="cursor-pointer">Privacy Policy</li>
           <li className="cursor-pointer">Terms & Conditions</li>
         </ul>

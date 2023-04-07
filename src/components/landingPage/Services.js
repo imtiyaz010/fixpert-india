@@ -65,7 +65,7 @@ const Card = ({ name, img, link }) => {
       <a href={link}>
         <img
           src={img}
-          className="w-72 h-40 rounded-md  transition-shadow duration-300 ease-in-out shadow-md hover:shadow-lg hover:shadow-black/30"
+          className="w-72 h-40 rounded-md  transition-shadow duration-300 ease-in-out shadow-md hover:shadow-lg hover:shadow-black/30 m-4"
           alt="img"
         />
         <p className="text-center font-semibold">{name}</p>
