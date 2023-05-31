@@ -9,7 +9,7 @@ function Links() {
       id: 1,
       tag: "MdEmail",
       title: "Email Here",
-      snap: "support@fixpert.india.com",
+      snap: "fixpertindia.service@gmail.com",
     },
     {
       id: 2,
