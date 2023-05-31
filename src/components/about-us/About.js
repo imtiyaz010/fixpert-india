@@ -13,23 +13,14 @@ function About() {
       <div className="md:col-span-1 p-4">
         <h2 className="text-xl font-bold">About Us</h2>
         <p className="xl:w-[75%]">
-          Fixpert India Services was established in year 2023 with a promise to
+          Fixpert India was established in year 2020 with a promise to
           provide customers with a clean and safe environment in personal and
           commercial spaces. In our organization, we are equipped with advanced
           technology and all the right tools, equipment that helps us provide
           satisfactory results to the customers. We serve as your reliable
-          partner for Professional Home and Commercial Deep Cleaning services,
-          Paint services, Sanitization services, AC Services & Repair,
-          Carpenters, Plumbing, Electricians and Pest Control Services. We also
-          provide Packers & Movers if you plan to shift to a new place and you
-          can avail all other services at new place. We specialise in making
-          your windows shine with window cleaning services, sparkling up the
-          corners of your home, up-keep the condition of your mattresses,
-          carpets. We also offer kitchen cleaning services, chair cleaning, and
-          sofa dry cleaning services, providing professional sanitization
-          services. Now, revamp the overall look of your home with the help of a
-          skilled house painting expert and carpenter in India by booking from
-          us.
+          partner for Professional Home and Commercial AC Repair & Service,
+          Washing Machine Repair and Service, Refrigerator Repair and Service, Water Purifier Repair and Service
+          Geyser Repair and Service, and LED TV Repair.
         </p>
       </div>
     </div>

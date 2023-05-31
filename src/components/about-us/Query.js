@@ -2,23 +2,21 @@ import React, { useState } from "react";
 import Select from "react-select";
 
 const location = [
-  { value: "mumbai", label: "Mumbai" },
-  { value: "delhi", label: "Delhi" },
-  { value: "bangalore", label: "Bangalore" },
-  { value: "hyderabad", label: "Hyderabad" },
+  { value: "kanpur", label: "Kanpur" },
 ];
 
 const service = [
-  { value: "ac-repair", label: "Ac Repair" },
-  { value: "house-cleaning", label: "House Cleaning" },
-  { value: "office-cleaning", label: "Office Cleaning" },
+  { value: "0", label: "AC Repair and Service" },
+  { value: "1", label: "Washing Machine Repair and Service" },
+  { value: "3", label: "Refrigerator Repair and Service" },
+  { value: "4", label: "Water Purifier Repair and Service" },
+  { value: "5", label: "Geyser Repair and Service" },
+  { value: "6", label: "LED TV Repair" },
 ];
 
 function Query() {
   const [selectedLocation, setSelectedLocation] = useState(null);
   const [selectedService, setSelectedService] = useState(null);
-
-  const pattern = "[7-9]{1}[0-9]{9}";
 
   return (
     <form className="flex flex-col p-3 md:p-12 gap-4">
@@ -41,15 +39,6 @@ function Query() {
             className="max-w-64"
             required
           />
-          <div>
-            <input
-              type="number"
-              id="area"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-              placeholder="Enter Area Square Feet."
-              required
-            />
-          </div>
           <div>
             <input
               type="text"

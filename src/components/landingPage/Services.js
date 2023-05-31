@@ -3,37 +3,37 @@ import React from "react";
 function Services() {
   const cardData = [
     {
-      name: "Home Deep Cleaning",
+      name: "AC Repair and Service",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYig3tye7g2ilLhJ-QNHKAd0_idow9qVsMOQ&usqp=CAU",
       link: "",
       id: 1,
     },
     {
-      name: "Office Cleaning",
+      name: "Washing Machine Repair and Service",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqMEHPD52J0GSzui-DnhatPGFMqaR0rsIGBA&usqp=CAU",
       link: "",
       id: 2,
     },
     {
-      name: "Kitchen Cleaning",
+      name: "Refrigerator Repair and Service",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpem0krwj7uniVu8OtzlqStgZekhuZ1a50Qg&usqp=CAU",
       link: "",
       id: 3,
     },
     {
-      name: "Bathroom Cleaning",
+      name: "Water Purifier Repair and Service",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaK77PYz1nQwPrz8SOfhSRM2sWh5_Pyn7ImQ&usqp=CAU",
       link: "",
       id: 4,
     },
     {
-      name: "Sofa Cleaning",
+      name: "Geyser Repair and Service",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2wtFbhKkpMpPHyxYL_YDgni716oHJ-fnxXw&usqp=CAU",
       link: "",
       id: 5,
     },
     {
-      name: "Glass Cleaning",
+      name: "LED TV Repair",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj6ZVg1573v5-fl2bzkbfVAXrV9NUZ9wQHJw&usqp=CAU",
       link: "",
       id: 6,

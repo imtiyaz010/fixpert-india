@@ -9,10 +9,12 @@ const getWidth = () =>
 
 function Header() {
   const links = [
-    { name: "Full Home Cleaning", link: "/", id: 1 },
-    { name: "Ac Service Repair", link: "/", id: 2 },
-    { name: "Cleaning Services", link: "/", id: 3 },
-    { name: "Cleaning Services", link: "/", id: 4 },
+    { name: "AC Repair", link: "/", id: 1 },
+    { name: "Washing Machine Repair", link: "/", id: 2 },
+    { name: "Refrigerator Repair", link: "/", id: 3 },
+    { name: "Water Purifier Repair", link: "/", id: 4 },
+    { name: "Geyser Repair", link: "/", id: 5 },
+    { name: "LED TV Repair", link: "/", id: 6 },
   ];
 
   const [isToggle, setIsToggle] = useState(false);

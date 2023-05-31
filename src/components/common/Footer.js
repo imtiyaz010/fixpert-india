@@ -10,7 +10,7 @@ function Footer() {
       </div>
       <hr />
       <div className="grid place-items-center text-white p-4 text-sm">
-        <p>Copyright 2023 © All Rights Reserved By Fixpert Services</p>
+        <p>Copyright 2020 © All Rights Reserved By Fixpert Services</p>
       </div>
     </div>
   );
@@ -48,7 +48,7 @@ const InfoDiv = () => {
         <h2 className="font-bold">Contact Info</h2>
         <hr className="w-1/3" />
         <ul className="flex flex-col gap-3 text-sm">
-          <li className="cursor-pointer">Kanpur, UP</li>
+          <li className="cursor-pointer">Shyam Nagar Managla Vihar Kanpur, UP</li>
           <li className="cursor-pointer">91-7860303304</li>
           <li className="cursor-pointer">
             fixpertindia.service@gmail.com
