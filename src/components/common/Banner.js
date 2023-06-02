@@ -4,19 +4,18 @@ function Banner() {
   return (
     <div className="w-full relative h-[50vh] lg:h-screen">
       <img
-        src="https://public.carlcare.com/public/1eba802c8207e841aae650084902f511.png"
+        src="https://images.unsplash.com/photo-1566917064245-1c6bff30dbf1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
         alt="img"
         className="absolute top-0 left-0 w-full h-[50vh] lg:h-screen"
       />
-      {/* <div className="w-full md:h-screen h-1/2 bg-[url('https://public.carlcare.com/public/1eba802c8207e841aae650084902f511.png')] bg-contain bg-no-repeat flex justify-center items-center flex-col"> */}
       <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center flex-col">
         <div className="px-4 my-8">
-          <h1 className=" text-3xl md:text-4xl lg:text-6xl font-bold text-white text-center">
+          <h1 className=" text-3xl md:text-4xl lg:text-6xl font-bold text-black text-center">
             Doorstep AC Repair and Servicing
           </h1>
         </div>
         <div className="flex flex-wrap px-4 mb-4">
-          <p className="text-xl md:text-2xl lg:text-3xl text-white text-center ">
+          <p className="text-xl md:text-2xl lg:text-3xl text-black text-center ">
             Budget-friendly and prompt air conditioner services by Carlcare with
             30 days of service warranty
           </p>

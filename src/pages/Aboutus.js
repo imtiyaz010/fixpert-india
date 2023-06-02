@@ -11,7 +11,7 @@ function Aboutus() {
       <Header />
       <PageBanner
         title="About Us"
-        bg="https://www.datocms-assets.com/53681/1632462877-abiutusgiepl.jpeg"
+        bg="https://images.unsplash.com/photo-1563906267088-b029e7101114?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWJvdXQlMjB1c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
       />
       <div className="flex flex-col justify-center 3xl:px-[25%]">
         <About />

@@ -9,7 +9,7 @@ function Contact() {
     <div>
       <Header />
       <PageBanner
-        bg="https://res.cloudinary.com/practicaldev/image/fetch/s--azBZrKVe--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/lkqdz74o7w5f1m26r7aw.jpg"
+        bg="https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNvbnRhY3QlMjB1c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
         title="Contact"
       />
       <Links />

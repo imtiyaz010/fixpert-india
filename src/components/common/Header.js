@@ -99,7 +99,7 @@ const Dropdown = ({ links }) => {
     <div className="relative" onMouseLeave={onLeaveHandler}>
       <button onMouseOver={onEnterHandler}>SERVICES</button>
       <div
-        className={`absolute top-6 left-[-28px] flex flex-col py-2 pr-4 bg-white shadow-lg shadow-black w-60 gap-3 ${
+        className={`absolute top-14 left-[-28px] flex flex-col py-2 pr-4 bg-white shadow-lg shadow-black w-60 gap-3 ${
           isOpen
             ? "opacity-100 transition-opacity ease-in-out delay-150 pointer-events-auto"
             : "transition-opacity ease-in-out opacity-0 delay-150 pointer-events-none"

@@ -5,7 +5,7 @@ function About() {
     <div className=" w-full grid md:grid-cols-2 justify-between p-2 xl:p-8 my-8">
       <div className="p-8">
         <img
-          src="https://www.build-review.com/wp-content/uploads/2021/04/Home-repair-1.jpg"
+          src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YWJvdXQlMjB1c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
           alt="banner"
           className="min-h-72"
         />
